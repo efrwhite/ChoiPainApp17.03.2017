@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ChoiPainApp17.03.2017</string>
+
+
+    <string-array name="GoalToTreat">
+
+
+        <item>Gardening</item>
+        <item>Driving</item>
+        <item>Go back to work</item>
+        <item>Typing</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+    <string-array name="PrefToTreat">
+
+
+        <item>Massage</item>
+        <item>Acupuncture</item>
+        <item>Guided-imagery exercise</item>
+        <item>Distraction</item>
+        <item>Back rubs</item>
+        <item>Vibration</item>
+        <item>Use of ice or heat</item>
+        <item>Dry mouth - rinse</item>
+        <item>Mucositis - magic mouthwash</item>
+        <item>Supplemental oxygen</item>
+        <item>Lotions/emollients for dry cracked and/or itchy skin</item>
+        <item>Music therapy</item>
+        <item>Healing touch</item>
+        <item>Meditation</item>
+        <item>Reiki therapy</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
+</resources>
