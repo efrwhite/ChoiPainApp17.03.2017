@@ -37,8 +37,8 @@ public class StartPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_page);
 
-        Button userInfo = (Button) findViewById(R.id.button2);
-        Button painEpisode = (Button) findViewById(R.id.button);
+        Button userInfo = (Button) findViewById(R.id.button);
+        Button painEpisode = (Button) findViewById(R.id.button2);
 
 
         userInfo.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +68,11 @@ public class StartPage extends AppCompatActivity {
         Intent intent = new Intent(StartPage.this, HistoryA1.class);
         startActivity(intent);
     }
+
+
+
+
+
 }
 
 

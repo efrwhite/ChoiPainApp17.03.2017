@@ -55,7 +55,7 @@ public class HistoryA1 extends AppCompatActivity {
         previousButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HistoryA1.this, HistoryA1.class);
+                Intent intent = new Intent(HistoryA1.this, StartPage.class);
                 startActivity(intent);
             }
         });

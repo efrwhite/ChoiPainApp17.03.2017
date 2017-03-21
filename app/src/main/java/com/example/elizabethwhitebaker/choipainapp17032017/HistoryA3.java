@@ -83,7 +83,10 @@ public class HistoryA3 extends AppCompatActivity {
 
                     otherConditions = otherConditions + Othr.getText().toString();
                 }
-
+                if(otherConditions == "")
+                {
+                    otherConditions = "NoneA";
+                }
                 StartPage.OtherConditions = otherConditions;
 
                 Intent intent = new Intent(HistoryA3.this, HistoryA4.class);

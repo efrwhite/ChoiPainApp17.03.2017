@@ -23,6 +23,36 @@ public class HistoryA4 extends AppCompatActivity {
         PTG1 = (Spinner)findViewById(R.id.spinnera4);
         PTP1 = (Spinner)findViewById(R.id.spinner2a4);
         Button previousButton = (Button) findViewById(R.id.prevButtonHA4);
+        Button nextButton = (Button)findViewById(R.id.nextButtonHA4);
+
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(PTG1.getSelectedItem().toString() == "Other:indicate")
+                {
+                    StartPage.PainTreatGoal =PTG.getText().toString();
+                }
+                else
+                {
+                    StartPage.PainTreatGoal = PTG1.getSelectedItem().toString();
+                }
+                if(PTP1.getSelectedItem().toString() == "Other:indicate")
+                {
+                    StartPage.PainTreatPref =PTP.getText().toString();
+                }
+                else
+                {
+                    StartPage.PainTreatPref = PTP1.getSelectedItem().toString();
+                }
+
+                Intent intent = new Intent(HistoryA4.this, HistoryA5.class);
+                startActivity(intent);
+
+
+            }
+        });
+
 
         previousButton.setOnClickListener(new View.OnClickListener() {
             @Override

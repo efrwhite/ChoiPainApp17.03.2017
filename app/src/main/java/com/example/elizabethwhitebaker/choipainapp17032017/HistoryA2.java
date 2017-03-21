@@ -133,6 +133,11 @@ public class HistoryA2 extends AppCompatActivity {
                 {
                     cancersDetected = cancersDetected + othrTxt.getText().toString();
                 }
+
+                if(cancersDetected == "")
+                {
+                    cancersDetected = "None";
+                }
                 StartPage.CancerDetected = cancersDetected;
 
 

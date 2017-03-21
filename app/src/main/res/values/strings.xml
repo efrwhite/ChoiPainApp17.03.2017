@@ -12,6 +12,95 @@
         <item>Other:indicate</item>
 
     </string-array>
+    <string-array name="PastPainTreat">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+    <string-array name="PainFeelLike">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
+    <string-array name="PainStart">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
+    <string-array name="Hours">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
+    <string-array name="Minutes">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
+
+
+
+    <string-array name="PrefAltTher">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
+    <string-array name="TypeOfPain">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+    <string-array name="CurrPainTreat">
+
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>Other:indicate</item>
+
+    </string-array>
+
     <string-array name="PrefToTreat">
 
 
