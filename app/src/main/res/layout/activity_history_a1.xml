@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.elizabethwhitebaker.choipainapp17032017.HistoryA1">
+    tools:context="com.example.elizabethwhitebaker.choipainapp17032017.HistoryA1"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <EditText
         android:id="@+id/editText"
@@ -13,14 +15,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First Name"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/editText2"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText4" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/datePicker"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
@@ -29,44 +27,31 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Last Name"
-        android:layout_marginRight="16dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintLeft_toRightOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/datePicker"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        android:text="Date of Birth"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/RG1" />
-
-    <EditText
         android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Ethnicity"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/RG1"
         app:layout_constraintBottom_toTopOf="@+id/nextButtonHA1"
-        app:layout_constraintTop_toBottomOf="@+id/RG1" />
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
 
     <Button
         android:id="@+id/nextButtonHA1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/prevButtonHA1"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/prevButtonHA1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
     <Button
@@ -74,19 +59,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/nextButtonHA1"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG1" />
 
     <RadioGroup
         android:id="@+id/RG1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@+id/editText5"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText4">
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/prevButtonHA1"
+        app:layout_constraintTop_toBottomOf="@+id/datePicker">
 
         <RadioButton
             android:id="@+id/radioButton12"
@@ -104,5 +92,16 @@
             android:onClick="rbgender"
             android:text="Female" />
     </RadioGroup>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="348dp"
+        android:layout_height="253dp"
+        android:scrollIndicators="right"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/RG1"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
 </android.support.constraint.ConstraintLayout>

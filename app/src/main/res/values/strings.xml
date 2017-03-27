@@ -15,20 +15,35 @@
     <string-array name="PastPainTreat">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
+        <item>Surgery</item>
+        <item>Chemotherapy</item>
+        <item>Hormonal therapy</item>
+        <item>Biological response modifier</item>
+        <item>Pharmacologic treatment</item>
+        <item>Use of ice or heat</item>
+        <item>Dry mouth - rinse</item>
+        <item>Mucositis - magic mouthwash</item>
+        <item>Supplemental oxygen</item>
+        <item>Lotions/emollients for dry cracked and/or itchy skin</item>
+        <item>Music therapy</item>
+        <item>Healing touch</item>
+        <item>Meditation</item>
+        <item>Massage</item>
+        <item>Acupuncture</item>
+        <item>Reiki therapy</item>
         <item>Other:indicate</item>
 
     </string-array>
     <string-array name="PainFeelLike">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
+        <item>Spasms</item>
+        <item>Stinging</item>
+        <item>Itching</item>
+        <item>Dull</item>
+        <item>Sharp</item>
+        <item>Achy</item>
+        <item>Shooting</item>
         <item>Other:indicate</item>
 
     </string-array>
@@ -36,10 +51,8 @@
     <string-array name="PainStart">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
+        <item>After starting cancer treatment</item>
+        <item>After starting any kind of pain treatment</item>
         <item>Other:indicate</item>
 
     </string-array>
@@ -47,10 +60,11 @@
     <string-array name="Hours">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
         <item>Other:indicate</item>
 
     </string-array>
@@ -58,10 +72,11 @@
     <string-array name="Minutes">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
+        <item>less than 5</item>
+        <item>5-10</item>
+        <item>11-15</item>
+        <item>16-30</item>
+        <item>31-45</item>
         <item>Other:indicate</item>
 
     </string-array>
@@ -83,20 +98,31 @@
     <string-array name="TypeOfPain">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
-        <item>Other:indicate</item>
+        <item>New pain</item>
+        <item>Chronic pain</item>
+        <item>Breakthrough pain</item>
+
 
     </string-array>
     <string-array name="CurrPainTreat">
 
 
-        <item>A</item>
-        <item>B</item>
-        <item>C</item>
-        <item>D</item>
+        <item>Surgery</item>
+        <item>Chemotherapy</item>
+        <item>Hormonal therapy</item>
+        <item>Biological response modifier</item>
+        <item>Pharmacologic treatment</item>
+        <item>Use of ice or heat</item>
+        <item>Dry mouth - rinse</item>
+        <item>Mucositis - magic mouthwash</item>
+        <item>Supplemental oxygen</item>
+        <item>Lotions/emollients for dry cracked and/or itchy skin</item>
+        <item>Music therapy</item>
+        <item>Healing touch</item>
+        <item>Meditation</item>
+        <item>Massage</item>
+        <item>Acupuncture</item>
+        <item>Reiki therapy</item>
         <item>Other:indicate</item>
 
     </string-array>
