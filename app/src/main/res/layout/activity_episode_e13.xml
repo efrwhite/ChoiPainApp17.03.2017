@@ -24,7 +24,7 @@
         android:layout_height="30dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:entries="@array/PrefAltTher"
+        android:entries="@array/CurrPainTreat"
         app:layout_constraintBottom_toTopOf="@+id/button10E13"
         app:layout_constraintTop_toBottomOf="@+id/textView40E13" />
 

@@ -41,7 +41,7 @@
         <activity android:name=".EpisodeA12" />
         <activity android:name=".EpisodeE13" />
         <activity android:name=".EpisodeA14" />
-        <activity android:name=".EpisodeA15"></activity>
+        <activity android:name=".EpisodeA15" />
     </application>
 
 </manifest>

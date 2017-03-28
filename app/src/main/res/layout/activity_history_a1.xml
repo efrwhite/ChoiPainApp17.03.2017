@@ -8,100 +8,128 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="121dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="First Name"
-        app:layout_constraintRight_toLeftOf="@+id/editText2"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/datePicker"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Last Name"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/editText"
-        app:layout_constraintBottom_toTopOf="@+id/datePicker"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="146dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Ethnicity"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/RG1"
-        app:layout_constraintBottom_toTopOf="@+id/nextButtonHA1"
-        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
-
-    <Button
-        android:id="@+id/nextButtonHA1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/prevButtonHA1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
-
-    <Button
-        android:id="@+id/prevButtonHA1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Previous"
-        app:layout_constraintRight_toLeftOf="@+id/nextButtonHA1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RG1" />
-
-    <RadioGroup
-        android:id="@+id/RG1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintRight_toLeftOf="@+id/editText5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/prevButtonHA1"
-        app:layout_constraintTop_toBottomOf="@+id/datePicker">
-
-        <RadioButton
-            android:id="@+id/radioButton12"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="rbgender"
-            android:text="Male" />
+            android:orientation="vertical" >
 
-        <RadioButton
-            android:id="@+id/radioButton11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="rbgender"
-            android:text="Female" />
-    </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="348dp"
-        android:layout_height="253dp"
-        android:scrollIndicators="right"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:scrollbars="vertical"
-        tools:layout_editor_absoluteX="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/RG1"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="First Name"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="21dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Last Name"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="21dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:scrollIndicators="right"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="84dp" />
+
+            <RadioGroup
+                android:id="@+id/RG1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="358dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="rbgender"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="rbgender"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ethnicity"
+                tools:layout_editor_absoluteX="174dp"
+                tools:layout_editor_absoluteY="365dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/prevButtonHA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Previous"
+                    tools:layout_editor_absoluteX="69dp"
+                    tools:layout_editor_absoluteY="443dp" />
+
+                <Button
+                    android:id="@+id/nextButtonHA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    tools:layout_editor_absoluteX="228dp"
+                    tools:layout_editor_absoluteY="436dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
